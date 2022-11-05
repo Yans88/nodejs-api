@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+/.idea
+/.vscode
+.idea
+*.iws
+*.iml
+*.ipr
+
+.env
+
+
+/package-lock.json
+/node_modules/
