@@ -5,11 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "concurrently \"npm run migration\" \"npm run start-prod\"",
+    "start-prod": "nodemon src/index.js",
+    "migration": "node src/migrations.js "
   },
   "author": "Yansen",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^7.5.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

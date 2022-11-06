@@ -5,7 +5,7 @@ USE todo4;
 DROP TABLE IF EXISTS todo_list;
 DROP TABLE IF EXISTS activity;
 
-CREATE TABLE activity (
+CREATE TABLE activites (
   id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   title text NOT NULL,
   email text NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE activity (
   deleted_at datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-CREATE TABLE todo_list (
+CREATE TABLE todos (
   id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   title text NOT NULL,
   is_active smallint(1) NOT NULL DEFAULT '1',
